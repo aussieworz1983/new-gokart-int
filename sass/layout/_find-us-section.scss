@@ -1,0 +1,17 @@
+.find-us__section{
+    background-image:linear-gradient(to right, rgba($color-black,0.7),rgba($color-black,0.7)),url("/img/go-kart-international-skegness-rules.jpg");
+    background-position: center;
+    background-size: cover;
+    &--wrapper{
+        padding:8rem 3rem;
+        text-align: center;
+        color:$color-white;
+        &__line{
+            color:$color-white;
+            height: .8rem;
+            width:4rem;
+            margin:0 auto;
+        }
+    }
+  
+}

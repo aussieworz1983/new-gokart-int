@@ -1,0 +1,17 @@
+.masthead{
+    height:90dvh;
+    width:100dvw;
+    background-image:linear-gradient(to right, rgba($color-black,0.5), rgba($color-black,0.5)), url("/img/go-kart-pexels-1.jpg");
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    &__inner{
+        color:$color-white;
+       &--line{
+        color:$color-primary;
+        width:5rem;
+       }
+    }
+}

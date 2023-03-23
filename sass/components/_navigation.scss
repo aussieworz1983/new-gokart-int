@@ -1,0 +1,34 @@
+.nav-bar{
+    background-color: $color-black;
+    padding:1rem .5rem;
+    &__desktop{
+
+        @include respond(tab-port) {
+            opacity:0;
+            visibility: hidden;
+         }
+         &--links{
+            width:100%;
+            display:flex;
+            flex-wrap:nowrap;
+            justify-content: center;
+            
+            &__link{
+               padding:1rem;
+              &--tag{
+                text-decoration: none;
+              }
+            }
+         }
+    }
+    &__mobile{
+        opacity:0;
+        visibility: hidden;
+        display:none;
+         @include respond(tab-port) {
+            opacity:1;
+            visibility: visible;
+            display:block;
+         }
+    }
+}

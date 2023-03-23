@@ -1,0 +1,23 @@
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .col-1{
+        flex-basis:100%;
+    }
+    .col-2{
+        flex-basis:calc(100%/2);
+    }
+    .col-3{
+        flex-basis:calc(100%/3);
+    }
+    .col-4{
+        flex-basis:calc(100%/4);
+    }
+    .col-5{
+        flex-basis:calc(100%/5);
+    }
+    .col-6{
+        flex-basis:calc(100%/6);  
+    }
+}

@@ -1,0 +1,198 @@
+*,
+* ::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(2rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-2rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInButton {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem); }
+  80% {
+    transform: translateY(-3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+/*
+0-600px phone
+600-900px tab portrait
+900-1200px tab land
+1200 - 1800 normal
+1000px + big desktop
+args :
+-phone
+-tab-port
+-tab-land
+-big-desktop
+1em 16px
+
+order@base typo general layout page components
+*/
+.img-responsive {
+  width: 100%;
+  height: auto; }
+
+.img-circle {
+  border-radius: 50%;
+  height: 30rem;
+  width: 30rem; }
+
+.kart-vid {
+  width: 60%; }
+
+.img-teams {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.nav-bar {
+  background-color: #000;
+  padding: 1rem .5rem; }
+  @media (max-width: 56.25em) {
+    .nav-bar__desktop {
+      opacity: 0;
+      visibility: hidden; } }
+  .nav-bar__desktop--links {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center; }
+    .nav-bar__desktop--links__link {
+      padding: 1rem; }
+      .nav-bar__desktop--links__link--tag {
+        text-decoration: none; }
+  .nav-bar__mobile {
+    opacity: 0;
+    visibility: hidden;
+    display: none; }
+    @media (max-width: 56.25em) {
+      .nav-bar__mobile {
+        opacity: 1;
+        visibility: visible;
+        display: block; } }
+
+.masthead {
+  height: 90dvh;
+  width: 100dvw;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/go-kart-pexels-1.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .masthead__inner {
+    color: #fff; }
+    .masthead__inner--line {
+      color: #e71212;
+      width: 5rem; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .row .col-1 {
+    flex-basis: 100%; }
+  .row .col-2 {
+    flex-basis: calc(100%/2); }
+  .row .col-3 {
+    flex-basis: calc(100%/3); }
+  .row .col-4 {
+    flex-basis: calc(100%/4); }
+  .row .col-5 {
+    flex-basis: calc(100%/5); }
+  .row .col-6 {
+    flex-basis: calc(100%/6); }
+
+.welcome__section .grow {
+  flex-grow: 1; }
+
+.welcome__section--content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%; }
+  .welcome__section--content__inner {
+    width: 80%; }
+
+.welcome__section--top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem; }
+  .welcome__section--top__inner--line {
+    width: 5rem;
+    color: #000;
+    height: .6rem; }
+
+.cta__section {
+  padding: 8rem 4rem;
+  background-color: #e71212;
+  color: #fff; }
+
+.find-us__section {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/go-kart-international-skegness-rules.jpg");
+  background-position: center;
+  background-size: cover; }
+  .find-us__section--wrapper {
+    padding: 8rem 3rem;
+    text-align: center;
+    color: #fff; }
+    .find-us__section--wrapper__line {
+      color: #fff;
+      height: .8rem;
+      width: 4rem;
+      margin: 0 auto; }
+
+.teams__section .row {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%; }
+  .teams__section .row .col-2 {
+    flex-grow: 1; }
+
+.teams__section--content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.img-row__section {
+  padding: 3rem 0;
+  background-color: #000; }
+  .img-row__section .row .col-3 {
+    padding: 2rem; }
+
+.footer {
+  background-color: #000;
+  color: #fff; }
