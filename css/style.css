@@ -9,6 +9,7 @@ html {
   font-size: 62.5%; }
 
 body {
+  font-family: Montserrat;
   box-sizing: border-box; }
 
 @keyframes moveInLeft {
@@ -41,6 +42,20 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
+.heading-text {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 800; }
+
+.primary-heading-text {
+  font-size: 2rem; }
+
+.secondary-heading-text {
+  font-size: 1.8rem; }
+
+.basic-paragraph {
+  font-size: 1.2rem; }
+
 /*
 0-600px phone
 600-900px tab portrait
@@ -62,8 +77,8 @@ order@base typo general layout page components
 
 .img-circle {
   border-radius: 50%;
-  height: 30rem;
-  width: 30rem; }
+  height: 20rem;
+  width: 20rem; }
 
 .kart-vid {
   width: 60%; }
@@ -88,7 +103,8 @@ order@base typo general layout page components
     .nav-bar__desktop--links__link {
       padding: 1rem; }
       .nav-bar__desktop--links__link--tag {
-        text-decoration: none; }
+        text-decoration: none;
+        color: #e71212; }
   .nav-bar__mobile {
     opacity: 0;
     visibility: hidden;
@@ -131,32 +147,34 @@ order@base typo general layout page components
   .row .col-6 {
     flex-basis: calc(100%/6); }
 
-.welcome__section .grow {
-  flex-grow: 1; }
-
-.welcome__section--content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%; }
-  .welcome__section--content__inner {
-    width: 80%; }
-
-.welcome__section--top {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem 2rem; }
-  .welcome__section--top__inner--line {
-    width: 5rem;
-    color: #000;
-    height: .6rem; }
+.welcome__section {
+  padding: 6rem 2rem; }
+  .welcome__section .grow {
+    flex-grow: 1; }
+  .welcome__section--content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; }
+    .welcome__section--content__inner {
+      width: 80%; }
+  .welcome__section--top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem; }
+    .welcome__section--top__inner--line {
+      width: 5rem;
+      color: #000;
+      height: .6rem; }
 
 .cta__section {
   padding: 8rem 4rem;
   background-color: #e71212;
   color: #fff; }
+  .cta__section--circle-box {
+    text-align: center; }
 
 .find-us__section {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/go-kart-international-skegness-rules.jpg");
@@ -193,6 +211,10 @@ order@base typo general layout page components
   .img-row__section .row .col-3 {
     padding: 2rem; }
 
+.contact__section {
+  padding: 6rem 2rem; }
+
 .footer {
   background-color: #000;
-  color: #fff; }
+  color: #fff;
+  padding: 10rem 4rem; }
