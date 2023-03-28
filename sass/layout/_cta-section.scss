@@ -2,8 +2,53 @@
     padding:8rem 4rem;
     background-color: $color-primary;
     color:$color-white;
+    &--orange{
+        background-color: $color-orange;
+    }
     &--circle-box{
         text-align: center;
+        position:relative;
+
+        .secondary-heading-text{
+            margin-bottom:2.5rem;
+        }
+        .circle-wrapper{
+            position:relative;
+           
+            &__link{
+                text-decoration:none;
+                color:$color-white;
+                font-weight:300;
+            }
+            .img-circle{
+                &:hover{
+                    filter:blur(2px);
+                    & ~ .fig-captian{
+                         opacity:1;
+                    } 
+                }
+                
+            }
+            .fig-captian{
+               @include abs-center;
+                background-color: $color-black;
+                color:$color-white;
+                padding:2rem;
+                opacity:0;
+                &:hover{
+                    opacity:1;
+                    & ~ .img-circle{
+                        filter:blur(2px);
+                    } 
+                }
+              
+            }
+        }
+        .basic-paragraph{
+            padding:1.5rem;
+            padding:2rem 5rem;
+        }
+      
     }
     &--box{
 

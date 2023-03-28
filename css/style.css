@@ -90,7 +90,8 @@ order@base typo general layout page components
 
 .nav-bar {
   background-color: #000;
-  padding: 1rem .5rem; }
+  padding: 2rem .5rem;
+  border-bottom: solid 3px #f15d08; }
   @media (max-width: 56.25em) {
     .nav-bar__desktop {
       opacity: 0;
@@ -100,11 +101,14 @@ order@base typo general layout page components
     display: flex;
     flex-wrap: nowrap;
     justify-content: center; }
-    .nav-bar__desktop--links__link {
-      padding: 1rem; }
-      .nav-bar__desktop--links__link--tag {
-        text-decoration: none;
-        color: #e71212; }
+    .nav-bar__desktop--links__link--tag {
+      padding: .8rem;
+      max-width: 100%;
+      font-size: 1.6rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-decoration: none;
+      color: #e71212; }
   .nav-bar__mobile {
     opacity: 0;
     visibility: hidden;
@@ -173,8 +177,39 @@ order@base typo general layout page components
   padding: 8rem 4rem;
   background-color: #e71212;
   color: #fff; }
+  .cta__section--orange {
+    background-color: #f15d08; }
   .cta__section--circle-box {
-    text-align: center; }
+    text-align: center;
+    position: relative; }
+    .cta__section--circle-box .secondary-heading-text {
+      margin-bottom: 2.5rem; }
+    .cta__section--circle-box .circle-wrapper {
+      position: relative; }
+      .cta__section--circle-box .circle-wrapper__link {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 300; }
+      .cta__section--circle-box .circle-wrapper .img-circle:hover {
+        filter: blur(2px); }
+        .cta__section--circle-box .circle-wrapper .img-circle:hover ~ .fig-captian {
+          opacity: 1; }
+      .cta__section--circle-box .circle-wrapper .fig-captian {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #000;
+        color: #fff;
+        padding: 2rem;
+        opacity: 0; }
+        .cta__section--circle-box .circle-wrapper .fig-captian:hover {
+          opacity: 1; }
+          .cta__section--circle-box .circle-wrapper .fig-captian:hover ~ .img-circle {
+            filter: blur(2px); }
+    .cta__section--circle-box .basic-paragraph {
+      padding: 1.5rem;
+      padding: 2rem 5rem; }
 
 .find-us__section {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/go-kart-international-skegness-rules.jpg");

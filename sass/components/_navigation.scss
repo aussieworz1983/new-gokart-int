@@ -1,6 +1,7 @@
 .nav-bar{
     background-color: $color-black;
-    padding:1rem .5rem;
+    padding:2rem .5rem;
+    border-bottom:solid 3px $color-orange;
     &__desktop{
 
         @include respond(tab-port) {
@@ -14,8 +15,13 @@
             justify-content: center;
             
             &__link{
-               padding:1rem;
+              
               &--tag{
+                padding:.8rem;
+                max-width:100%;
+                font-size:1.6rem;
+                font-weight:400;
+                letter-spacing:1px;
                 text-decoration: none;
                 color:$color-primary;
               }
