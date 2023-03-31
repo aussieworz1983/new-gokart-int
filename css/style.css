@@ -54,7 +54,10 @@ body {
   font-size: 1.8rem; }
 
 .basic-paragraph {
-  font-size: 1.2rem; }
+  font-size: 1.4rem; }
+
+.cta-contact {
+  font-size: 1.6rem; }
 
 /*
 0-600px phone
@@ -88,6 +91,9 @@ order@base typo general layout page components
   height: 100%;
   object-fit: cover; }
 
+.mast-logo {
+  margin: auto; }
+
 .nav-bar {
   background-color: #000;
   padding: 2rem .5rem;
@@ -119,6 +125,39 @@ order@base typo general layout page components
         visibility: visible;
         display: block; } }
 
+.btn-wrapper {
+  margin-top: 2rem; }
+  .btn-wrapper .btn, .btn-wrapper .btn:link, .btn-wrapper .btn:visited {
+    color: #fff;
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding: 1rem .5rem;
+    border-radius: 25px; }
+  .btn-wrapper .btn--primary {
+    background-color: #000;
+    border: 0.3rem solid #e71212; }
+  .btn-wrapper .btn--secondary {
+    background-color: #000;
+    border: 0.3rem solid #f15d08; }
+  .btn-wrapper .btn--white {
+    background-color: #000;
+    border: 0.3rem solid #fff; }
+
+.contact-form {
+  width: 100%; }
+  .contact-form__input {
+    width: 100%;
+    margin-bottom: 1rem; }
+  .contact-form__textarea {
+    width: 100%; }
+  .contact-form .form-label {
+    float: left;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    font-weight: 400; }
+  .contact-form .submit {
+    float: left; }
+
 .masthead {
   height: 90dvh;
   width: 100dvw;
@@ -129,10 +168,14 @@ order@base typo general layout page components
   justify-content: center;
   align-items: center; }
   .masthead__inner {
-    color: #fff; }
+    color: #fff;
+    text-align: center; }
     .masthead__inner--line {
-      color: #e71212;
-      width: 5rem; }
+      color: #fff;
+      background-color: #fff;
+      width: 5rem;
+      margin: 2rem auto;
+      height: 1rem; }
 
 .row {
   display: flex;
@@ -155,13 +198,16 @@ order@base typo general layout page components
   padding: 6rem 2rem; }
   .welcome__section .grow {
     flex-grow: 1; }
+  .welcome__section--vid {
+    margin-right: 3rem; }
+    .welcome__section--vid .kart-vid {
+      float: right; }
   .welcome__section--content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 100%; }
-    .welcome__section--content__inner {
+    .welcome__section--content__inner .secondary-heading-text {
+      margin-bottom: 3rem; }
+    .welcome__section--content__inner .basic-paragraph {
       width: 80%; }
   .welcome__section--top {
     display: flex;
@@ -171,7 +217,17 @@ order@base typo general layout page components
     .welcome__section--top__inner--line {
       width: 5rem;
       color: #000;
-      height: .6rem; }
+      background-color: #000;
+      height: .6rem;
+      margin: 2rem auto; }
+  .welcome__section--bottom {
+    text-align: center;
+    margin: 3rem 0;
+    padding: 4rem 2rem; }
+    .welcome__section--bottom .secondary-header-text {
+      margin: 1rem 0; }
+    .welcome__section--bottom .call-text {
+      margin: 3rem 0; }
 
 .cta__section {
   padding: 8rem 4rem;
@@ -179,19 +235,31 @@ order@base typo general layout page components
   color: #fff; }
   .cta__section--orange {
     background-color: #f15d08; }
+  .cta__section--white {
+    background-color: #fff;
+    color: #000; }
   .cta__section--circle-box {
     text-align: center;
     position: relative; }
     .cta__section--circle-box .secondary-heading-text {
       margin-bottom: 2.5rem; }
     .cta__section--circle-box .circle-wrapper {
-      position: relative; }
+      position: relative;
+      border-radius: 50%;
+      width: max-content;
+      margin: auto; }
+      .cta__section--circle-box .circle-wrapper:hover > .img-circle {
+        filter: blur(2px) grayscale(100%); }
+        .cta__section--circle-box .circle-wrapper:hover > .img-circle ~ .fig-captian {
+          opacity: 1; }
       .cta__section--circle-box .circle-wrapper__link {
         text-decoration: none;
         color: #fff;
+        font-size: 1.5rem;
+        text-transform: uppercase;
         font-weight: 300; }
       .cta__section--circle-box .circle-wrapper .img-circle:hover {
-        filter: blur(2px); }
+        filter: blur(2px) grayscale(100%); }
         .cta__section--circle-box .circle-wrapper .img-circle:hover ~ .fig-captian {
           opacity: 1; }
       .cta__section--circle-box .circle-wrapper .fig-captian {
@@ -202,28 +270,45 @@ order@base typo general layout page components
         background-color: #000;
         color: #fff;
         padding: 2rem;
-        opacity: 0; }
+        opacity: 0;
+        border-radius: 15px; }
         .cta__section--circle-box .circle-wrapper .fig-captian:hover {
           opacity: 1; }
           .cta__section--circle-box .circle-wrapper .fig-captian:hover ~ .img-circle {
-            filter: blur(2px); }
+            filter: blur(2px) grayscale(100%); }
+          .cta__section--circle-box .circle-wrapper .fig-captian:hover > .circle-wrapper__link {
+            color: #e71212; }
     .cta__section--circle-box .basic-paragraph {
       padding: 1.5rem;
       padding: 2rem 5rem; }
+  .cta__section--box {
+    text-align: center; }
+    .cta__section--box .secondary-heading-text {
+      margin: 3rem 0; }
+    .cta__section--box .cta-contact--link {
+      padding-top: 1rem;
+      display: block;
+      text-decoration: none;
+      color: #fff; }
 
 .find-us__section {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/go-kart-international-skegness-rules.jpg");
   background-position: center;
   background-size: cover; }
   .find-us__section--wrapper {
-    padding: 8rem 3rem;
+    padding: 15rem 3rem;
     text-align: center;
     color: #fff; }
+    .find-us__section--wrapper .basic-paragraph {
+      margin: 1rem 0; }
+    .find-us__section--wrapper .btn-wrapper {
+      margin: 3rem 0; }
     .find-us__section--wrapper__line {
       color: #fff;
+      background-color: #fff;
       height: .8rem;
       width: 4rem;
-      margin: 0 auto; }
+      margin: 2rem auto; }
 
 .teams__section .row {
   display: flex;
@@ -239,6 +324,14 @@ order@base typo general layout page components
   display: flex;
   align-items: center;
   justify-content: center; }
+  .teams__section--content__inner {
+    padding: 2rem; }
+    .teams__section--content__inner .secondary-heading-text {
+      margin-bottom: 3rem; }
+    .teams__section--content__inner .btn-wrapper {
+      margin-top: 4rem; }
+    .teams__section--content__inner .basic-paragraph {
+      margin-bottom: 1rem; }
 
 .img-row__section {
   padding: 3rem 0;
@@ -248,6 +341,30 @@ order@base typo general layout page components
 
 .contact__section {
   padding: 6rem 2rem; }
+  .contact__section--details .secondary-heading-text {
+    text-align: center; }
+  .contact__section--details .details {
+    margin-left: 35%; }
+  .contact__section--details .icon {
+    margin: 3rem 0;
+    text-align: center; }
+  .contact__section--form {
+    text-align: center;
+    padding: 1rem 8rem; }
+
+.about__section .row .col-2:first-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.about__section--inner {
+  padding: 2rem; }
+  .about__section--inner .secondary-heading-text {
+    margin-bottom: 3rem; }
+  .about__section--inner .btn-wrapper {
+    margin-top: 4rem; }
+  .about__section--inner .basic-paragraph {
+    margin-bottom: 1rem; }
 
 .footer {
   background-color: #000;

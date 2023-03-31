@@ -3,14 +3,21 @@
     background-position: center;
     background-size: cover;
     &--wrapper{
-        padding:8rem 3rem;
+        padding:15rem 3rem;
         text-align: center;
         color:$color-white;
+        .basic-paragraph{
+            margin:1rem 0;
+        }
+        .btn-wrapper{
+            margin:3rem 0;
+        }
         &__line{
             color:$color-white;
+            background-color:$color-white;
             height: .8rem;
             width:4rem;
-            margin:0 auto;
+            margin:2rem auto;
         }
     }
   

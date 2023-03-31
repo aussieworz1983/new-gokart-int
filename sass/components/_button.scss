@@ -1,0 +1,29 @@
+.btn-wrapper{
+    margin-top:2rem;
+    .btn{
+        &,
+        &:link,
+        &:visited{
+            color:$color-white;
+            font-size:1.4rem;
+            text-decoration:none;
+            padding:1rem .5rem;
+            border-radius:25px;
+           
+        }
+        &--primary{
+            background-color: $color-black;
+            border:.3rem solid $color-primary;
+        }
+        &--secondary{
+            background-color: $color-black;
+            border:.3rem solid $color-orange;
+        }
+        &--white{
+            background-color: $color-black;
+            border:.3rem solid $color-white;
+        }
+
+    }
+
+}

@@ -84,11 +84,12 @@
     </header>
     <div class="masthead">
         <div class="masthead__inner">
-            <div class="row text-center">
-                <div class="col-1 masthead-logo">
-                    <img src="img/" class="mast-logo" />
-                    <hr class="masthead__inner--line">
+            <div class="row ">
+                <div class="col-1">
+                    <img src="img/go-kart-international.svg" class="mast-logo" />
                     <h1 class="heading-text">Go Kart International</h1>
+                  
+                   
                 </div>
             </div>
         </div>
@@ -108,10 +109,13 @@
 
             </div>
             <div class="col-2 grow">
-                <video class="kart-vid" autoplay controls loop muted>
-                    <source src="vids/gokartinternational.mkv" type="video/mp4">
-                    Your browser does not support video player
-                </video>
+                <div class="welcome__section--vid">
+                    <video class="kart-vid" autoplay controls loop muted>
+                        <source src="vids/gokartinternational.mkv" type="video/mp4">
+                        Your browser does not support video player
+                    </video>
+                </div>
+            
             </div>
             <div class="col-2 grow">
                 <div class="welcome__section--content">
@@ -121,13 +125,20 @@
                             keeping our karts in tip top shape to ensure a high level of safety, also our karts are
                             child friendly.We are situated on the fair at fantasy island themed resort and we cant wait
                             to meet you you.</p>
-                        <h4 class="secondary-heading-text">We Are Open 7 A Week Days March Till November</h4>
-                        <p class="call-text">Call Now And Book On:</p>
-                        <div class="btn-wrapper">
-                            <a href="tel:+447882084717" class="btn-primary">07882084717</a>
-                        </div>
+                      
+
                     </div>
                 </div>
+            </div>
+            <div class="col-1">
+                <div class="welcome__section--bottom">
+                    <h4 class="secondary-heading-text">We Are Open 7 A Week Days March Till November</h4>
+                    <p class="call-text">Call Now And Book On:</p>
+                    <div class="btn-wrapper">
+                        <a href="tel:+447882084717" class="btn btn--secondary">07882084717</a>
+                    </div>
+                </div>
+             
             </div>
         </div>
 
@@ -139,7 +150,8 @@
                     <i class="fas fa-envelope fa-7x"></i>
 
                     <h4 class="secondary-heading-text">Email</h4>
-                    <p>Email Address:info@gokartinternational.com</p>
+                    <p class="cta-contact">Email Address:
+                        <a href="" class="cta-contact--link">info@gokartinternational.com</a></p>
                 </div>
 
             </div>
@@ -147,14 +159,14 @@
                 <div class="cta__section--box">
                     <i class="fas fa-phone fa-7x"></i>
                     <h4 class="secondary-heading-text">Phone</h4>
-                    <p>Call Now On: 07882084717</p>
+                    <p class="cta-contact">Call Now On: <a href="" class="cta-contact--link">07882084717</a> </p>
                 </div>
             </div>
             <div class="col-3">
                 <div class="cta__section--box">
                     <i class="fas fa-book-open fa-7x"></i>
                     <h4 class="secondary-heading-text">Bookings</h4>
-                    <p>Book Now : 07882084717</p>
+                    <p class="cta-contact">Book Now : <a href="" class="cta-contact--link">07882084717</a> </p>
                 </div>
             </div>
         </div>
@@ -169,15 +181,15 @@
                <div class="teams__section--content">
                 <div class="teams__section--content__inner">
                     <h4 class="secondary-heading-text">Book An Event With Us.</h4>
-                    <p>Looking for a great day out for a team event, party even a hen or stag? no problem give us a call and
+                    <p class="basic-paragraph">Looking for a great day out for a team event, party even a hen or stag? no problem give us a call and
                         we will get you booked in for a spot to ensure we have a space ready for when you are here, as we
                         can get very busy especially in the high season.</p>
-                    <p>A great place for a day out with the fair and market here also, for the thrill seekers and the
+                    <p class="basic-paragraph">A great place for a day out with the fair and market here also, for the thrill seekers and the
                         shoppers everyone has something to do at fantasy island.</p>
     
-                    <p class="">Call Now And Book On:</p>
+                    <p class="basic-paragraph">Call Now And Book On:</p>
                     <div class="btn-wrapper">
-                        <a href="tel:+447882084717" class="btn-secondary">07882084717</a>
+                        <a href="tel:+447882084717" class="btn btn--secondary">07882084717</a>
                     </div>
                 </div>
                
@@ -203,7 +215,7 @@
         </div>
 
     </section>
-    <section class="cta__section cta__section--orange">
+    <section class="cta__section cta__section--white">
         <div class="row">
             <div class="col-3 cta__section--circle-box">
                 <h4 class="secondary-heading-text">Working Teams? Anytime..</h4>
@@ -215,24 +227,31 @@
                 <p class="basic-paragraph">A great team building exercise for any working group, and we can reserve a space for your party so
                     give us a call.</p>
                 <div class="btn-wrapper">
-                    <a href="tel:+447882084717" class="btn-primary">07882084717</a>
+                    <a href="tel:+447882084717" class="btn btn--secondary">07882084717</a>
                 </div>
             </div>
             <div class="col-3 cta__section--circle-box">
                 <h4 class="secondary-heading-text">Birthday Party? No Problem..</h4>
-                <img class="img-circle" src="img/birthday.jpg">
+                <figure class="circle-wrapper">
+                    <img class="img-circle" src="img/birthday.jpg">
+                    <figcaption class="fig-captian"><a href="#" class="circle-wrapper__link">Book Now!</a></figcaption>
+                </figure>
                 <p class="basic-paragraph">We can reserve a time for any sized party at your requirements so why wait give a call now.</p>
                 <div class="btn-wrapper">
-                    <a href="tel:+447882084717" class="btn-primary">07882084717</a>
+                    <a href="tel:+447882084717" class="btn btn--secondary">07882084717</a>
                 </div>
             </div>
             <div class="col-3 cta__section--circle-box">
                 <h4 class="secondary-heading-text">Stags And Hens? Easy..</h4>
-                <img class="img-circle" src="img/hen-party.jpg">
+                <figure class="circle-wrapper">
+                    <img class="img-circle" src="img/hen-party.jpg">
+                    <figcaption class="fig-captian"><a href="#" class="circle-wrapper__link">Book Now!</a></figcaption>
+                </figure>
+                
                 <p class="basic-paragraph">A great activity for hens and stags and you can reserve a time for any sized party at your
                     requirements so why wait give a call now..</p>
                 <div class="btn-wrapper">
-                    <a href="tel:+447882084717" class="btn-primary">07882084717</a>
+                    <a href="tel:+447882084717" class="btn btn--secondary">07882084717</a>
                 </div>
             </div>
         </div>
@@ -244,13 +263,13 @@
                 <div class="col-1 ">
                     <h4 class="secondary-heading-text">Find Us At Fantasy Island Ingoldmells Skegness</h4>
                     <hr class="find-us__section--wrapper__line">
-                    <p>We are located on the fair at fantasy island resort, come give us a visit for some high octane
+                    <p class="basic-paragraph">We are located on the fair at fantasy island resort, come give us a visit for some high octane
                         fun.</p>
                     <p>Address: Fantasy Island Themed Resort,</p>
                     <p>Sea lane, ingoldmells, skegness</p>
                     <p>Linconshire</p>
                     <p>PE25 1RH</p>
-                    <div class="find-us-btn-wrapper"><a class="find-us-btn" href="#">Book Now</a></div>
+                    <div class="btn-wrapper"><a class="btn btn--secondary" href="#">Book Now</a></div>
                 </div>
             </div>
         </div>
@@ -259,14 +278,17 @@
     <section class="about__section" id="about">
         <div class="row">
             <div class="col-2">
-                <h4 class="secondary-heading-text">All About Us</h4>
-                <p class="basic-paragraph">Go kart international has been active on fantasy island for over ten years, we love our job and our
-                    customers.We are open 7 days a week from march till november.</p>
-                <p>With great value for money, and a high octane fun experience for all ages, we hope to offer all the
-                    fun karting you could hope for.</p>
-                <div class="btn-wrapper">
-                    <a href="tel:+447882084717" class="btn-secondary">07882084717</a>
+                <div class="about__section--inner">
+                    <h4 class="secondary-heading-text">All About Us</h4>
+                    <p class="basic-paragraph">Go kart international has been active on fantasy island for over ten years, we love our job and our
+                        customers.We are open 7 days a week from march till november.</p>
+                    <p class="basic-paragraph">With great value for money, and a high octane fun experience for all ages, we hope to offer all the
+                        fun karting you could hope for.</p>
+                    <div class="btn-wrapper">
+                        <a href="tel:+447882084717" class="btn btn--secondary">07882084717</a>
+                    </div>
                 </div>
+              
             </div>
             <div class="col-2">
                 <img class="img-teams" src="img/go-kart-international-skegness-boy-riding-kart.jpg" />
@@ -277,18 +299,29 @@
     <section class="cta__section " id="btm-cta">
         <div class="row">
             <div class="col-3">
-
-                <i class="fas fa-calendar-day fa-7x"></i>
-                <h4>Book Your Event With Us</h4>
+                <div class="cta__section--box">
+                    <i class="fas fa-calendar-day fa-7x"></i>
+                    <h4 class="secondary-heading-text">Book Your Event With Us</h4>
+                    <p class="cta-contact">Email Address:
+                        <a href="" class="cta-contact--link">info@gokartinternational.com</a></p>
+                </div>
+                
             </div>
             <div class="col-3">
-
-                <i class="fas fa-flag-checkered fa-7x"></i>
-                <h4>Fun For All Ages</h4>
+                <div class="cta__section--box">
+                    <i class="fas fa-flag-checkered fa-7x"></i>
+                    <h4 class="secondary-heading-text">Fun For All Ages</h4>
+                    <p class="cta-contact">Call Now On: <a href="" class="cta-contact--link">07882084717</a> </p>
+                </div>
+                
             </div>
             <div class="col-3">
-                <i class="fas fa-users fa-7x"></i>
-                <h4>Great For Team Building</h4>
+                <div class="cta__section--box">
+                    <i class="fas fa-users fa-7x"></i>
+                    <h4 class="secondary-heading-text">Great For Team Building</h4>
+                    <p class="cta-contact">Book Now : <a href="" class="cta-contact--link">07882084717</a> </p>
+                </div>
+               
             </div>
         </div>
 
@@ -296,57 +329,60 @@
     <section class="contact__section " id="contact">
         <div class="row">
             <div class="col-2 ">
-                <h4>Contact Us</h4>
-                <div>
-                    <i class="fas fa-phone fa-10x text-center"></i>
+                <div class="contact__section--details">
+                    <h4 class="secondary-heading-text">Contact Us</h4>
+                    <div class="icon"> 
+                        <i class="fas fa-phone fa-10x"></i>
+                    </div>
+                    <div class="details">
+                        <p>Phone Number:<a class="details--link" href="tel:+447464842678">07882084717</a></p>
+                        <p>Emaill Adress:<a class="details--link" 
+                                href="mailto:info@gokartinternational.com">info@gokartinternational.com</a></p>
+                        <p>Address: Go Kart International, Fantasy Island Resort,</p>
+                        <p>Address: Sea Lane, Ingoldmells</p>
+                        <p>Address: Skegness</p>
+                        <p>Postcode: PE25 1RH</p>
+                    </div>
+                   
                 </div>
-
-                <p>Phone Number:<a href="tel:+447464842678">07882084717</a></p>
-                <p>Emaill Adress:<a
-                        href="mailto:info@gokartinternational.com">info@gokartinternational.com</a></p>
-                <p>Address: Go Kart International, Fantasy Island Resort,</p>
-                <p>Address: Sea Lane, Ingoldmells</p>
-                <p>Address: Skegness</p>
-                <p>Postcode: PE25 1RH</p>
+               
             </div>
             <div class="col-2 ">
-                <h4>Our Contact Form</h4>
+                <div class="contact__section--form">
+                    <h4 class="secondary-heading-text">Our Contact Form</h4>
            
-                <p>* is required</p>
-                <form>
-                    <div class="form-group">
-                        <label for="" class="form-label"></label>
-                        <input class="name" type="text" id="name" name="name" palceholder="Enter First Name *">
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="form-label"></label>
-                        <input class="name" type="text" name="last_name" id="last_name" placeholder="Enter Last Name *">
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="form-label"></label>
-                        <input class="email" type="email" name="email" id="email" palceholder="Enter Email *">
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="form-label"></label>
-                        <input class="phone" type="number" id="phone" name="phone" palceholder="Enter Phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="form-label"></label>
-                        <input class="phone" type="number" id="phone" name="phone" palceholder="Enter Phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="form-label"></label>
-                        <textarea class="message" type="text" name="message" id="message" placeholder="Enter Your Message: *"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="form-label"></label>
-                        <input class="captcha" type="text" id="captcha" name="captcha" palceholder="2 * 11 = *">
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="form-label"></label>
-                        <button class="submit" id="submit" name="submit" type="submit">Submit</button>
-                    </div>
-                </form>
+                    <p>* is required</p>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="" class="form-label">First Name:</label>
+                            <input class="contact-form__input" type="text" id="name" name="name" palceholder="Enter First Name *">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="form-label">Last Name:</label>
+                            <input class="contact-form__input" type="text" name="last_name" id="last_name" placeholder="Enter Last Name *">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="form-label">Email Adress:</label>
+                            <input class="contact-form__input" type="email" name="email" id="email" palceholder="Enter Email *">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="form-label">Phone Number:</label>
+                            <input class="contact-form__input" type="number" id="phone" name="phone" palceholder="Enter Phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="form-label">Message:</label>
+                            <textarea class="contact-form__textarea" type="text" name="message" id="message" placeholder="Enter Your Message: *"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="form-label">Captcha: (16 * 2 ?)</label>
+                            <input class="contact-form__input" type="text" id="captcha" name="captcha" palceholder="2 * 11 = *">
+                        </div>
+                        <div class="form-group">
+                            <button class="submit" id="submit" name="submit" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+               
             </div>
         </div>
 

@@ -9,9 +9,13 @@
     align-items: center;
     &__inner{
         color:$color-white;
+        text-align:center;
        &--line{
-        color:$color-primary;
+        color:$color-white;
+        background-color: $color-white;
         width:5rem;
+        margin: 2rem auto;
+        height:1rem;
        }
     }
 }
