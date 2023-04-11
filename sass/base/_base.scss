@@ -13,5 +13,21 @@ html {
 body {
     font-family: Montserrat;
     box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+//////////
+/// animations
+.slide-it-right{
+    animation:moveInRight .7s;
+}
+.slide-it-left{
+    animation:moveInLeft .7s;
+}
+.slide-it-up{
+    animation:moveUp .7s;
+}
+.fade-it-in{
+    animation:fadeIn 1s;
 }
 

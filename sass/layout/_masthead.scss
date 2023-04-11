@@ -1,21 +1,31 @@
 .masthead{
-    height:90dvh;
-    width:100dvw;
+    height:90vh;
+    width:100vw;
     background-image:linear-gradient(to right, rgba($color-black,0.5), rgba($color-black,0.5)), url("/img/go-kart-pexels-1.jpg");
     background-position: center;
     background-size: cover;
     display:flex;
     justify-content: center;
     align-items: center;
+    
     &__inner{
         color:$color-white;
         text-align:center;
+        
        &--line{
         color:$color-white;
         background-color: $color-white;
         width:5rem;
         margin: 2rem auto;
         height:1rem;
+       }
+       .mast-logo{
+        
+        animation:.8s  spin360;
+       }
+       .heading-text{
+
+        animation:moveInLeft .8s;
        }
     }
 }

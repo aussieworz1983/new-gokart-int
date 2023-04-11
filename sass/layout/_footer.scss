@@ -2,4 +2,26 @@
     background-color: $color-black;
     color:$color-white;
     padding:$footer-padding;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    .copy-div{
+        text-align: center;
+        p{
+           font-size: 2rem;
+           margin-bottom:1rem;
+
+        }
+    }
+    .privacy-div{
+        
+        text-align: center;
+        p{
+            font-size: 2rem;
+            a{
+                text-decoration: none;
+                color:$color-primary;
+            }
+         }
+    }
 }

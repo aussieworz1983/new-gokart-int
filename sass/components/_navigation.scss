@@ -3,7 +3,7 @@
     padding:2rem .5rem;
     border-bottom:solid 3px $color-orange;
     &__desktop{
-
+        animation:fadeIn 1s;
         @include respond(tab-port) {
             opacity:0;
             visibility: hidden;

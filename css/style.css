@@ -10,7 +10,20 @@ html {
 
 body {
   font-family: Montserrat;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
+
+.slide-it-right {
+  animation: moveInRight .7s; }
+
+.slide-it-left {
+  animation: moveInLeft .7s; }
+
+.slide-it-up {
+  animation: moveUp .7s; }
+
+.fade-it-in {
+  animation: fadeIn 1s; }
 
 @keyframes moveInLeft {
   0% {
@@ -32,6 +45,16 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem); }
+  80% {
+    transform: translateY(-3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 @keyframes moveInButton {
   0% {
     opacity: 0;
@@ -42,16 +65,32 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes spin360 {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-2rem) rotateY(180deg); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 .heading-text {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   text-transform: uppercase;
   font-weight: 800; }
 
 .primary-heading-text {
-  font-size: 2rem; }
+  font-size: 2.4rem; }
 
 .secondary-heading-text {
-  font-size: 1.8rem; }
+  font-size: 2rem; }
 
 .basic-paragraph {
   font-size: 1.4rem; }
@@ -84,7 +123,7 @@ order@base typo general layout page components
   width: 20rem; }
 
 .kart-vid {
-  width: 60%; }
+  width: 80%; }
 
 .img-teams {
   width: 100%;
@@ -98,23 +137,25 @@ order@base typo general layout page components
   background-color: #000;
   padding: 2rem .5rem;
   border-bottom: solid 3px #f15d08; }
-  @media (max-width: 56.25em) {
-    .nav-bar__desktop {
-      opacity: 0;
-      visibility: hidden; } }
-  .nav-bar__desktop--links {
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center; }
-    .nav-bar__desktop--links__link--tag {
-      padding: .8rem;
-      max-width: 100%;
-      font-size: 1.6rem;
-      font-weight: 400;
-      letter-spacing: 1px;
-      text-decoration: none;
-      color: #e71212; }
+  .nav-bar__desktop {
+    animation: fadeIn 1s; }
+    @media (max-width: 56.25em) {
+      .nav-bar__desktop {
+        opacity: 0;
+        visibility: hidden; } }
+    .nav-bar__desktop--links {
+      width: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center; }
+      .nav-bar__desktop--links__link--tag {
+        padding: .8rem;
+        max-width: 100%;
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-decoration: none;
+        color: #e71212; }
   .nav-bar__mobile {
     opacity: 0;
     visibility: hidden;
@@ -127,40 +168,81 @@ order@base typo general layout page components
 
 .btn-wrapper {
   margin-top: 2rem; }
-  .btn-wrapper .btn, .btn-wrapper .btn:link, .btn-wrapper .btn:visited {
-    color: #fff;
-    font-size: 1.4rem;
-    text-decoration: none;
-    padding: 1rem .5rem;
-    border-radius: 25px; }
-  .btn-wrapper .btn--primary {
-    background-color: #000;
-    border: 0.3rem solid #e71212; }
-  .btn-wrapper .btn--secondary {
-    background-color: #000;
-    border: 0.3rem solid #f15d08; }
-  .btn-wrapper .btn--white {
-    background-color: #000;
-    border: 0.3rem solid #fff; }
+  .btn-wrapper .btn {
+    display: inline-block; }
+    .btn-wrapper .btn, .btn-wrapper .btn:link, .btn-wrapper .btn:visited {
+      color: #fff;
+      font-size: 1.4rem;
+      text-decoration: none;
+      padding: 1rem 1rem;
+      border-radius: 25px;
+      transition: all .3s;
+      text-transform: uppercase;
+      position: relative;
+      cursor: pointer; }
+    .btn-wrapper .btn:active, .btn-wrapper .btn:focus {
+      outline: none; }
+    .btn-wrapper .btn:hover {
+      transform: scale(1.2); }
+    .btn-wrapper .btn--primary {
+      background-color: #000;
+      border: 0.3rem solid #e71212; }
+      .btn-wrapper .btn--primary:hover {
+        background-color: #e71212;
+        border: 0.3rem solid #000;
+        box-shadow: 0 3px 8px #3d3c3c; }
+    .btn-wrapper .btn--secondary {
+      background-color: #000;
+      border: 0.3rem solid #f15d08; }
+      .btn-wrapper .btn--secondary:hover {
+        background-color: #f15d08;
+        border: 0.3rem solid #000;
+        box-shadow: 0 3px 8px #3d3c3c; }
+    .btn-wrapper .btn--white {
+      background-color: #000;
+      border: 0.3rem solid #fff; }
 
 .contact-form {
   width: 100%; }
+  .contact-form .form-group {
+    margin-bottom: .1rem; }
   .contact-form__input {
     width: 100%;
-    margin-bottom: 1rem; }
+    margin-bottom: .5rem;
+    padding-top: .3rem;
+    border: none;
+    border-top: .2rem solid #000; }
+    .contact-form__input:focus {
+      outline: none; }
   .contact-form__textarea {
-    width: 100%; }
+    width: 100%;
+    border: none;
+    border-top: .2rem solid #000;
+    height: auto; }
+    .contact-form__textarea:focus {
+      outline: none; }
   .contact-form .form-label {
     float: left;
     margin-bottom: .5rem;
     font-size: 1.2rem;
     font-weight: 400; }
   .contact-form .submit {
-    float: left; }
+    float: left;
+    padding: 1rem 1rem;
+    background-color: #e71212;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    border: none;
+    transition: all .2s; }
+    .contact-form .submit:hover {
+      background-color: #f71e1e;
+      transform: scale(1.2);
+      box-shadow: .5rem .5rem .5rem #464444; }
 
 .masthead {
-  height: 90dvh;
-  width: 100dvw;
+  height: 90vh;
+  width: 100vw;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/go-kart-pexels-1.jpg");
   background-position: center;
   background-size: cover;
@@ -176,6 +258,10 @@ order@base typo general layout page components
       width: 5rem;
       margin: 2rem auto;
       height: 1rem; }
+    .masthead__inner .mast-logo {
+      animation: .8s  spin360; }
+    .masthead__inner .heading-text {
+      animation: moveInLeft .8s; }
 
 .row {
   display: flex;
@@ -294,7 +380,8 @@ order@base typo general layout page components
 .find-us__section {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/go-kart-international-skegness-rules.jpg");
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
   .find-us__section--wrapper {
     padding: 15rem 3rem;
     text-align: center;
@@ -342,15 +429,28 @@ order@base typo general layout page components
 .contact__section {
   padding: 6rem 2rem; }
   .contact__section--details .secondary-heading-text {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 5rem; }
   .contact__section--details .details {
-    margin-left: 35%; }
+    width: 50%;
+    margin: 0 auto; }
+    .contact__section--details .details--text {
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-bottom: .5rem; }
+      .contact__section--details .details--text__link {
+        text-decoration: none;
+        color: #e71212;
+        margin-left: 1rem; }
   .contact__section--details .icon {
     margin: 3rem 0;
     text-align: center; }
   .contact__section--form {
     text-align: center;
     padding: 1rem 8rem; }
+  .contact__section .secondary-heading-text {
+    text-align: center;
+    margin-bottom: 5rem; }
 
 .about__section .row .col-2:first-of-type {
   display: flex;
@@ -369,4 +469,19 @@ order@base typo general layout page components
 .footer {
   background-color: #000;
   color: #fff;
-  padding: 10rem 4rem; }
+  padding: 10rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .footer .copy-div {
+    text-align: center; }
+    .footer .copy-div p {
+      font-size: 2rem;
+      margin-bottom: 1rem; }
+  .footer .privacy-div {
+    text-align: center; }
+    .footer .privacy-div p {
+      font-size: 2rem; }
+      .footer .privacy-div p a {
+        text-decoration: none;
+        color: #e71212; }

@@ -1,23 +1,54 @@
 .btn-wrapper{
     margin-top:2rem;
     .btn{
+        display: inline-block;
         &,
         &:link,
         &:visited{
             color:$color-white;
             font-size:1.4rem;
             text-decoration:none;
-            padding:1rem .5rem;
+            padding:1rem 1rem;
             border-radius:25px;
+            transition:all .3s;
+            text-transform: uppercase;
+            position:relative;
+            cursor:pointer;
+
+           
            
         }
+         &:active,
+         &:focus {
+         outline: none;
+         }
+         &:hover{
+            transform: scale(1.2);
+         }
         &--primary{
+            
             background-color: $color-black;
             border:.3rem solid $color-primary;
+           
+            &:hover{
+                background-color: $color-primary;
+                border:.3rem solid $color-black;
+                box-shadow:0 3px 8px #3d3c3c;
+                
+            }
         }
         &--secondary{
+           
             background-color: $color-black;
             border:.3rem solid $color-orange;
+            &:hover{
+                background-color: $color-orange;
+                border:.3rem solid $color-black;
+                box-shadow:0 3px 8px #3d3c3c;
+             
+       
+              
+            }
         }
         &--white{
             background-color: $color-black;
@@ -25,5 +56,5 @@
         }
 
     }
-
+ 
 }

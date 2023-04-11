@@ -1,11 +1,27 @@
 .contact-form{
     width:100%;
+    .form-group{
+        margin-bottom:.1rem;
+    }
     &__input{
         width:100%;
-        margin-bottom:1rem;
+        margin-bottom:.5rem;
+        padding-top:.3rem;
+        border:none; 
+        border-top:.2rem solid #000;
+        &:focus{
+            outline:none;
+        }
+      
     }
     &__textarea{
         width:100%;
+        border:none;
+        border-top:.2rem solid #000;
+        height:auto;
+        &:focus{
+            outline:none;
+        }
     }
     .form-label{
         float:left;
@@ -15,5 +31,17 @@
     }
     .submit{
         float:left;
+        padding:1rem 1rem;
+        background-color: $color-primary;
+        color:#fff;
+        text-transform: uppercase;
+        font-weight: 400;
+        border:none;
+        transition: all .2s;
+        &:hover{
+            background-color: $color-primary-light;
+            transform: scale(1.2);
+            box-shadow:.5rem .5rem .5rem #464444;
+        }
     }
 }

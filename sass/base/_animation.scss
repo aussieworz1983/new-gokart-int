@@ -1,3 +1,4 @@
+
 @keyframes moveInLeft {
     0% {
         opacity: 0;
@@ -29,7 +30,21 @@
         transform: translate(0);
     }
 }
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
 
+    80% {
+        transform: translateY(-3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
 @keyframes moveInButton {
     0% {
         opacity: 0;
@@ -43,5 +58,32 @@
     100% {
         opacity: 1;
         transform: translate(0);
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        
+    }
+    100% {
+        opacity: 1;
+        
+    }
+}
+@keyframes spin360{
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+        
+    }
+
+    80% {
+        transform: translateX(-2rem) rotateY(180deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0) ;
+        
     }
 }
