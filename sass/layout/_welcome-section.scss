@@ -8,18 +8,34 @@
        .kart-vid{
         float:right;
        }
+       @include respond(phone){
+        margin-right:0;
+        .kart-vid{
+            float:none;
+           }
+       }
     }
     &--content{
     
         width:100%;
         height:100%;
         &__inner{
-           .secondary-heading-text{
-            margin-bottom: 3rem;
-           }
-           .basic-paragraph{
-                 width:80%;
-           }
+            .secondary-heading-text{
+                margin-bottom: 3rem;
+               }
+               .basic-paragraph{
+                     width:80%;
+               }
+            @include respond(phone){
+                text-align: center;
+                .secondary-heading-text{
+                    margin: 3rem 0;
+                   }
+                   .basic-paragraph{
+                         width:100%;
+                   }
+            }
+          
           
         }
     }
@@ -36,6 +52,11 @@
                 background-color: $color-black;
                 height:.6rem;
                 margin:2rem auto;
+            }
+            @include respond(phone){
+                .primary-heading-text{
+                    text-align: center;
+                };
             }
         }
    

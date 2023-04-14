@@ -24,4 +24,15 @@
             }
          }
     }
+    .nld-div{
+        text-align: center;
+        p{
+            margin-top: 2rem;
+            font-size: 2rem;
+            a{
+                text-decoration: none;
+                color:$color-primary;
+            }
+        }
+    }
 }

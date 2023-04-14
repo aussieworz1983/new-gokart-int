@@ -8,7 +8,10 @@
      } 
      .details{
       width:50%;
-        margin:0 auto;
+      margin:5rem auto; 
+      @include respond(phone){
+         margin:0 3rem;
+      }
         &--text{
          font-size: 1.4rem;
          font-weight: 400;
@@ -25,6 +28,9 @@
      .icon{
         margin:3rem 0;
         text-align: center;
+        i{
+         font-size:15rem;
+        }
      }
       
        
@@ -33,6 +39,9 @@
     &--form{
        text-align: center;
        padding: 1rem 8rem;
+       @include respond(phone){
+         padding:1rem 3rem;
+       }
 
     }
     .secondary-heading-text{

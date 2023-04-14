@@ -9,6 +9,9 @@
 }
 .kart-vid{
     width:80%;
+    @include respond(phone){
+        width:100%;
+    }
 }
 .img-teams{
     width:100%;

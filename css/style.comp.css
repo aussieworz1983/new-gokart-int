@@ -349,12 +349,15 @@ order@base typo general layout page components
 .masthead {
   height: 90vh;
   width: 100vw;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/go-kart-pexels-1.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/go-kart-pexels-1.webp");
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 56.25em) {
+    .masthead {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/go-kart-pexels-1-med.webp"); } }
   .masthead__inner {
     color: #fff;
     text-align: center; }
@@ -523,10 +526,13 @@ order@base typo general layout page components
         margin: 1rem 0; } }
 
 .find-us__section {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/go-kart-international-track.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/go-kart-international-track.webp");
   background-position: center;
   background-size: cover;
   background-attachment: fixed; }
+  @media (max-width: 56.25em) {
+    .find-us__section {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/go-kart-international-track-med.webp"); } }
   .find-us__section--wrapper {
     padding: 15rem 3rem;
     text-align: center;

@@ -2,6 +2,26 @@
     padding:8rem 4rem;
     background-color: $color-primary;
     color:$color-white;
+    @include respond(phone){
+        .row{
+            :not(:last-child).col-3{
+                margin-bottom:3rem;
+            }
+            
+                
+        }
+    }
+    @include respond(tab-port){
+        .row{
+          //flex-wrap:nowrap;
+          :not(:last-child).col-3{
+            margin-bottom:3rem;
+           }
+          .col-3{
+            flex-basis:100%;
+          }
+        }
+    }
     &--orange{
         background-color: $color-orange;
     }
@@ -12,7 +32,9 @@
     &--circle-box{
         text-align: center;
         position:relative;
-
+        display:flex;
+        flex-direction: column;
+        align-items: stretch;
         .secondary-heading-text{
             margin-bottom:2.5rem;
         }
@@ -21,7 +43,8 @@
             border-radius:50%;
             width:max-content;
             margin:auto;
-            &:hover > .img-circle{
+            &:hover > picture > .img-circle{
+                //circle
                 filter:blur(2px) grayscale(100%);
                 & ~ .fig-captian{
                      opacity:1;
@@ -37,15 +60,7 @@
 
                 
             }
-            .img-circle{
-                &:hover{
-                    filter:blur(2px) grayscale(100%);
-                    & ~ .fig-captian{
-                         opacity:1;
-                    } 
-                }
-                
-            }
+          
             .fig-captian{
                @include abs-center;
                 background-color: $color-black;
@@ -54,10 +69,7 @@
                 opacity:0;
                 border-radius: 15px;
                 &:hover{
-                    opacity:1;
-                    & ~ .img-circle{
-                        filter:blur(2px) grayscale(100%);
-                    } 
+                    //fig cation
                     &>.circle-wrapper__link{
                        color:$color-primary;
                       
@@ -67,8 +79,16 @@
             }
         }
         .basic-paragraph{
-            padding:1.5rem;
+           
             padding:2rem 5rem;
+            @include respond(tab-port){
+                padding:2rem 12rem;
+               
+            }
+            @include respond(phone){
+                padding:2rem 2rem;
+               
+            }
         }
       
     }
@@ -84,6 +104,14 @@
             text-decoration:none;
             color:$color-white;
         }
+       }
+       @include respond(phone){
+        
+        .secondary-heading-text{
+            margin:1rem 0;
+       }
+           
+        
        }
     }
 }

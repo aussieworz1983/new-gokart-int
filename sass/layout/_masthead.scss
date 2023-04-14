@@ -1,7 +1,10 @@
 .masthead{
     height:90vh;
     width:100vw;
-    background-image:linear-gradient(to right, rgba($color-black,0.5), rgba($color-black,0.5)), url("/img/go-kart-pexels-1.jpg");
+    background-image:linear-gradient(to right, rgba($color-black,0.5), rgba($color-black,0.5)), url("/img/go-kart-pexels-1.webp");
+    @include respond(tab-port){
+        background-image:linear-gradient(to right, rgba($color-black,0.5), rgba($color-black,0.5)), url("/img/go-kart-pexels-1-med.webp");
+    }
     background-position: center;
     background-size: cover;
     display:flex;
